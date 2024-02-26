@@ -8,15 +8,12 @@ package com.example;
  * @since 2024-02-22
  */
 import java.util.Scanner;
-
 // Class
 public final class Logging {
-
   /** This is a private constructor used to prevent instantiation. */
   private Logging() {
     throw new UnsupportedOperationException("Cannot be instantiated.");
   }
-
   /**
    * This is the main method.
    *
@@ -30,15 +27,13 @@ public final class Logging {
     float massPerLog;
     float numLogFloat;
     int numLog;
-
+    // Starts Scanner
     Scanner sc = new Scanner(System.in);
-
     // Try Catch.
     try {
       // Output to Console.
       System.out.println("This program will help calculate how many logs you can fit based on their respective lengths.");
       System.out.print("Please Input the length of logs 0.25, 0.5, or 1: ");
-
       // Casts Radius to double.
       metersPerLog = sc.nextFloat();
       // Checks if value is 0.25, 0.5, 1
